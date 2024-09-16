@@ -81,8 +81,8 @@ button:focus-visible {
 /* General body styling */
 body {
   font-family: 'Helvetica', sans-serif;
-  background-color: #ffe4e6; /* Light cotton candy pink */
-  color: #333; /* Soft dark text */
+  background-color: #ffe4e6; 
+  color: #333; 
   margin: 0;
   padding: 20px;
 }
@@ -100,7 +100,7 @@ body {
 /* Titles */
 h2.Maintitle {
   text-align: center;
-  color: #ff69b4; /* Hot pink for the title */
+  color: #ff69b4; 
   margin-bottom: 30px;
   font-size: 32px;
 }
@@ -116,23 +116,23 @@ input[type="text"] {
   width: 70%;
   padding: 12px;
   margin-bottom: 15px;
-  border: 2px solid #ffb6c1; /* Light pink border */
+  border: 2px solid #ffb6c1; 
   border-radius: 8px;
   font-size: 16px;
   background-color: #fff;
-  color: #9370DB; /* Light purple text color */
+  color: #9370DB; 
   transition: border-color 0.3s;
 }
 
 input[type="text"]:focus {
-  border-color: #ff69b4; /* Hot pink border on focus */
+  border-color: #ff69b4; 
   outline: none;
 }
 
 /* Buttons */
 input[type="submit"], button {
   padding: 12px 20px;
-  background-color: #ff69b4; /* Hot pink button */
+  background-color: #ff69b4; 
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 8px;
@@ -142,7 +142,7 @@ input[type="submit"], button {
 }
 
 input[type="submit"]:hover, button:hover {
-  background-color: #ffb6c1; /* Lighter pink on hover */
+  background-color: #ffb6c1; 
 }
 
 /* Lists for ingredients and steps */
@@ -152,7 +152,7 @@ ul, ol {
 }
 
 ul li, ol li {
-  background-color: #ffe4e6; /* Soft cotton candy pink */
+  background-color: #ffe4e6; 
   margin-bottom: 8px;
   padding: 12px;
   border-radius: 8px;
@@ -162,7 +162,7 @@ ul li, ol li {
 }
 
 ul li:hover, ol li:hover {
-  background-color: #ffd6da; /* Slightly darker pink on hover */
+  background-color: #ffd6da; 
 }
 
 /* Greeting section */
