@@ -77,3 +77,123 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* General body styling */
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: #ffe4e6; /* Light cotton candy pink */
+  color: #333; /* Soft dark text */
+  margin: 0;
+  padding: 20px;
+}
+
+/* Main container styling */
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles */
+h2.Maintitle {
+  text-align: center;
+  color: #ff69b4; /* Hot pink for the title */
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+h3 {
+  color: #ff69b4;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+/* Input fields */
+input[type="text"] {
+  width: 70%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ffb6c1; /* Light pink border */
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #9370DB; /* Light purple text color */
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #ff69b4; /* Hot pink border on focus */
+  outline: none;
+}
+
+/* Buttons */
+input[type="submit"], button {
+  padding: 12px 20px;
+  background-color: #ff69b4; /* Hot pink button */
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover, button:hover {
+  background-color: #ffb6c1; /* Lighter pink on hover */
+}
+
+/* Lists for ingredients and steps */
+ul, ol {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+ul li, ol li {
+  background-color: #ffe4e6; /* Soft cotton candy pink */
+  margin-bottom: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  list-style-type: none;
+  border: 1px solid #ffb6c1;
+  transition: background-color 0.3s;
+}
+
+ul li:hover, ol li:hover {
+  background-color: #ffd6da; /* Slightly darker pink on hover */
+}
+
+/* Greeting section */
+.greeting input {
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 2px solid #ffb6c1;
+  background-color: #fff;
+}
+
+.greeting input:focus {
+  border-color: #ff69b4;
+}
+
+/* Section background for better separation */
+section {
+  margin-bottom: 30px;
+}
+
+/* Recipe section */
+.Recipe h2 {
+  color: #ff69b4;
+  text-align: center;
+  font-size: 28px;
+}
+
+.Recipe h3 {
+  color: #ff69b4;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
