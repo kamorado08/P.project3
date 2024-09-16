@@ -30,6 +30,12 @@ const addStep = () => {
   })
   input_steps.value = ''
 }
+
+onMounted( () => {
+  myIngr.value = JSON.parse(localStorage.getItem('myIngr')) || []
+  mySteps.value = JSON.parse(localStorage.getItem('mySteps')) || []
+})
+
 </script>
 
 <template>
@@ -49,7 +55,7 @@ const addStep = () => {
     <form @submit.prevent = "addIngredient" >
       <h4>Insert your ingredients</h4>
       <input type="text" placeholder="e.g., 2 Eggs, tomatos, lettuce" v-model="input_ingr"/>
-      <input  type="submit" value="Add Ingredient" @click.prevent="addIngredient"/>
+      <input  type="submit" value="Add Ingredient" />
     </form>
 
   </section>
@@ -59,26 +65,26 @@ const addStep = () => {
     <form @submit.prevent = "addStep" >
       <h4>Write the steps for the perfect dish</h4>
       <input type="text" placeholder="e.g., Mix the eggs in a bowl" v-model="input_steps"/>
-      <input type="submit" value="Add Step" @click.prevent="addStep"/>
+      <input type="submit" value="Add Step"/>
     </form>
   </section>
 
   <section class="Recipe">
-  <h3>Recipe</h3>
-  <h2>ingredients</h2>
+  <h2>Recipe</h2>
+  <h3>Ingredients</h3>
     <ul>
-      <li v-for="(ing, index) in myIngr" :key="index">  
-      {{ingr.content }}
+      <li v-for="x in myIngr" :key="index">  
+      {{x.content }}
       </li>
     </ul>
 
-    <h2>Steps</h2>
+    <h3>Steps</h3>
     <ul>
-      <li v-for="(step, index) in mySteps" :key="index">  
-      {{ingr.content }}
+      <li v-for="y, in mySteps" :key="index">  
+      {{y.content }}
       </li>
     </ul>
-    
+
   </section>
   </main>
   </template>
